@@ -8,6 +8,8 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .App {
@@ -18,6 +20,10 @@ body,
   svg {
     height: 100%;
   }
+}
+
+div {
+  border: 1px solid grey;
 }
 
 .spacer {
@@ -96,4 +102,13 @@ form {
     padding: 3px 8px;
     margin-top: 16px;
   }
+}
+
+#loginForm {
+  margin: 0 30%;
+  align-items: center;
+}
+
+#loginbutton {
+  margin: 7% 2%;
 }

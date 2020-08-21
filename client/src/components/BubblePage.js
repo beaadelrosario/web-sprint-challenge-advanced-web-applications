@@ -4,6 +4,11 @@ import axios from "axios";
 import Bubbles from "./Bubbles";
 import ColorList from "./ColorList";
 
+const initialFormValues = {
+  color: "",
+  code: ""
+};
+
 const BubblePage = () => {
   const [colorList, setColorList] = useState([]);
   // fetch your colors data from the server when the component mounts
