@@ -28,9 +28,21 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain what a token is used for.
+
+tokens, issued by the server, are strings of cryptic text, which can be stored on the client-side using local storage or session storage. The server can readily tell the client that it issued the token. It can also read the token and make decisions for data transfer based on the client’s permission.
+
 2. What steps can you take in your web apps to keep your data secure?
+
+Private Routes, Credentials/authentication and protected pages
+As we build our web apps, we will most likely have some “protected” routes - routes that should only render with authentication. Normally, the client will make a login request, sending the server the user’s username and password. Then, the server will check those credentials against the database, and if it can authenticate the user, it will return a token. Once we have this token, we can add two layers of protection to our app. One uses protected routes, and the other sends an authentication header with our API calls
+
 3. Describe how web servers work.
+
+A web server processes incoming network requests over HTTP and several other related protocols. The primary function of a web server is to store, process and deliver web pages to clients. The communication between client and server takes place using the Hypertext Transfer Protocol- HTTP
+
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+PUT can map to both Create and Update depending on the existence of the URI used with the PUT.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

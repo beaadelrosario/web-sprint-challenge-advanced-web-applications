@@ -12,24 +12,19 @@ function App() {
     <Router>
       <div className="App">
         <div className="appNav">
-          <ul>
-            <li>
+
               <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/protected">Protected Page</Link>
-            </li>
-          </ul>
+
+              {/* <Link to="/protected">Protected Page</Link> */}
+
         </div>
         <Switch>
           <PrivateRoute 
           exact path="/protected" 
           component={BubblePage}
           />
-          <Route exact path="/login" component={Login} />
-          <Route>
-            <Login />
-          </Route>
+          <Route path="/login" component={Login} />
+        
         </Switch>
       </div>
     </Router>
