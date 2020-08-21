@@ -24,9 +24,10 @@ const Login = (props) => {
     e.preventDefault();
     axiosWithAuth()
       .post("/api/login", credentials)
-      .then((res) => { console.log(res)
-        // localStorage.setItem("token", res.data.payload);
-        // props.history.push("/protected");
+      .then((res) => { 
+        // console.log('BEA: after login response', res)
+        localStorage.setItem("token", res.data.payload);
+        props.history.push("/protected");
       })
       .catch((err) => console.log(err));
   };
